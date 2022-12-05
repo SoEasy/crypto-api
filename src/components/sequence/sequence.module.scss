@@ -1,0 +1,17 @@
+.sequence {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin: 10px;
+    display: flex;
+
+    &-left {
+      justify-content: start;
+    }
+
+    &-right {
+      justify-content: end;
+    }
+  }
+}

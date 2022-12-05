@@ -1,0 +1,32 @@
+$borderColor: #6f6f6f;
+
+.accordion {
+  &__container {
+    outline: 1px solid $borderColor;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid $borderColor;
+    background-color: #efefef;
+    cursor: pointer;
+  }
+
+  &__content {
+    transition: height 1s;
+    overflow: hidden;
+    height: 0;
+
+    &-expanded {
+      height: auto;
+    }
+  }
+}
+
